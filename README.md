@@ -11,18 +11,21 @@ You are building the API for a pizza-delivery company. Don't worry about a fro
 | `/users/:id`            | Error            | Get user if it exists  | Update user if it exists | Error                    |
 | `/users/:id?admin=true` | Error            | et user if it exists   | Update user if it exists | Delete user if it exists |
 
-- Data Params
-name, email, street, address
+#### Data Params
 
-- Success Responses:
+- name, email, street, address
 
-Code: 200, 201
-Content: `{ name : "Desmond", email : "desmond@gmail.com", street: 23, address: "Lagos"  }`
 
-- Error Responses:
+#### Success Responses:
 
-code: 400, 500
-Content: `{ error : "User doesn't exist" }`
+- Code: 200, 201
+- Content: `{ name : "Desmond", email : "desmond@gmail.com", street: 23, address: "Lagos"  }`
+
+
+#### Error Responses:
+
+- code: 400, 500
+- Content: `{ error : "User doesn't exist" }`
 
 
 ## Tokens
@@ -34,18 +37,21 @@ Content: `{ error : "User doesn't exist" }`
 | `/token/:id`            | Error            | Get token if it exists  | Error                   | Error                    |
 | `/token/:id?admin=true` | Error           | Get token if it exists  | Update token if it exists | Delete token if it exists |
 
-- Data Params
-password, email, street, address
+#### Data Params
 
-- Success Responses:
+- password, email, street, address
 
-Code: 200, 201
-Content: `{ userId : "34544", passowrd : "********" }`
 
-- Error Responses:
+#### Success Responses:
 
-code: 400, 500
-Content: `{ error : "Token can't be created" }`
+- Code: 200, 201
+- Content: `{ userId : "34544", passowrd : "********" }`
+
+
+#### Error Responses:
+
+- Code: 400, 500
+- Content: `{ error : "Token can't be created" }`
 
 
 ## Menu Items
@@ -56,18 +62,21 @@ Content: `{ error : "Token can't be created" }`
 | `/menuItem?admin=true`   | Create new menuItem | List all menuItem   | Error                    | Error               |
 | `/menuItem/:id?admin=true` | Error     | Get token if it exists  | Update token if it exists | Delete token if it exists |
 
-- Data Params
-menu name
+#### Data Params
 
-- Success Responses:
+- menu name
 
-Code: 200, 201
-Content: `{ menu : "" }`
 
-- Error Responses:
+#### Success Responses:
 
-code: 400, 500
-Content: `{ error : "Menu can't be created" }`
+- Code: 200, 201
+- Content: `{ menu : "" }`
+
+
+#### Error Responses:
+
+- Code: 400, 500
+- Content: `{ error : "Menu can't be created" }`
 
 
 ## Orders
@@ -78,16 +87,16 @@ Content: `{ error : "Menu can't be created" }`
 | `/order`                | Create new order | Error            | Error        | Error         |
 | `/order?user=id` | Error        | Get list of orders by user  | Error        | Error |
 
+#### Success Responses:
 
-- Success Responses:
+- Code: 200, 201
+- Content: `{ user : {}, orders: [] }`
 
-Code: 200, 201
-Content: `{ user : {}, orders: [] }`
 
-- Error Responses:
+#### Error Responses:
 
-code: 400, 500
-Content: `{ error : "Menu can't be created" }`
+- code: 400, 500
+- Content: `{ error : "Menu can't be created" }`
 
 
 
