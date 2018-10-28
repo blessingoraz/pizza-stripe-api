@@ -9,11 +9,11 @@ You are building the API for a pizza-delivery company. Don't worry about a fro
 | CRUD                    | CREATE           | READ                   | UPDATE                   | DELETE                   |
 | `/users`                | Create new users | List all users         | Error                    | Error                    |
 | `/users/:id`            | Error            | Get user if it exists  | Update user if it exists | Error                    |
-| `/users/:id?admin=true` | Error            | et user if it exists   | Update user if it exists | Delete user if it exists |
+| `/users/:id?admin=true` | Error            | Get user if it exists   | Update user if it exists | Delete user if it exists |
 
 #### Data Params
 
-- name, email, street, address
+- name, email, password, street, address
 
 
 #### Success Responses:
